@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetInfo - Cadastro</title>
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/globalStyles.css">
+  <link rel="stylesheet" href="./src/styles/register.css">
+  <script type="module" src="./src/scripts/register.js" defer></script>
+</head>
+
+<body>
+  <section class="info">
+    <div class="info__container">
+      <h1>Petinfo</h1>
+      <h1><span class="feature">Ooooooba!</span></h1>
+      <p>Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+      <div class="infoImages__container">
+        <img src="./src/assets/img/img-register.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="form__container">
+
+    <h2>Cadastro</h2>
+    <form id="loginForm" action="">
+        <label for="user">Usuário</label>
+        <input type="text" name="username" class="input" >
+      <label for="email">Email</label>
+      <input id="wrongEmail" class="input email" type="text" name="email" required>
+      <label for="link">Link da foto do perfil</label>
+      <input type="text" name="avatar" class="input">
+      <label for="password">Senha</label>
+      <input class="input password " type="password" name="password" required>
+      <button id="register" class="acessButton">Cadastrar</button>
+      <a href="index.html">
+        <h3>Voltar para o login?</h3>
+      </a>
+      
+    </form>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <script type="module" src="./src/scripts/feed.js" defer></script>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="src/styles/feed.css">
+</head>
+
+<body id="body">
+    <header>
+        <h1>Petinfo</h1>
+        <div>
+            <img class="userIMG" src=""  alt="profile image">
+            <button id="postCreate">Criar publicação</button>
+        </div>
+
+    </header>
+    <div id="split">
+        <h2>Feed</h2>
+    </div>
+
+    <main>
+        <ul id="list">
+            <!-- <li class="post__item">
+                <div class="postInfo__containner">
+                    <div class="postInfo__item">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="" class="profile__img">
+                        <h3>Rafael Bertoldo</h3>
+                        <h4>Outubro de 2022</h4>
+                    </div>
+                    <div class="postInfo__buttons">
+                        <button class="edit">Editar</button>
+                        <button class="delete">Excluir</button>
+                    </div>
+                </div>
+                <h2>Outubro Rosa: Detalhes sobre a importância da prenvenção do cancer de mama em cadelas e gatas</h2>
+                <p>Doar sangue não é só um ato de amor ao próximo, envolve muito mais que isso. Além da empatia, o doador traz esperança e uma...</p>
+                <button class="postButton">Acessar publicação</button>
+            </li> -->
+        </ul>
+    </main>
+
+
+    <dialog id="modal__container">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Criando novo post</h2>
+                <button class="fechar-modal">X</button>
+            </div>
+            <div class="modal-content">
+                <label for="title">Título do post</label>
+                <input name="title" type="text" class="input-titulo inputs" placeholder="Digite o título aqui...">
+                <label for="content">Conteúdo do post</label>
+                <textarea name="content" type="text" class="input-conteudo inputs" placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+                <div class="botoes">
+                    <button class="modalButtons" id="cancelar">Cancelar</button>
+                    <button class="modalButtons" id="publicar">Publicar</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    
+</body>
+
+</html>

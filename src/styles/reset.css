@@ -24,6 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	box-sizing: border-box;
 	text-decoration: none;
+	font-family: IBM Plex Sans;
 }
 
 /* HTML5 display-role reset for older browsers */

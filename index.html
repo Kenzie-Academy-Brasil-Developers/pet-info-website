@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetInfo - Login</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetInfo - Login</title>
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/globalStyles.css">
+  <link rel="stylesheet" href="./src/styles/index.css">
+  <script type="module" src="./src/scripts/index.js" defer></script>
+</head>
+
+<body>
+  <section class="info">
+    <div class="info__container">
+      <h1>Petinfo</h1>
+      <h1><span class="feature">Amor</span> e <span class="feature">carinho</span> por meio do conhecimento</h1>
+      <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+      <div class="infoImages__container">
+        <img src="./src/assets/img/img-login.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="form__container">
+
+    <h2>Login</h2>
+    <form id="loginForm" action="">
+      <label for="email">Email</label>
+      <input id="emailInput" class="inputs" type="text" name="email" required placeholder="Digite seu email aqui">
+      <div id="emailError" class="error-message"></div>
+      <label for="password">password</label>
+      <input id="passwordInput" class="inputs" type="password" name="password" required placeholder="Digite sua senha aqui....">
+      <div id="passwordError" class="error-message"></div>
+      <button class="acessButton">Acessar</button>
+      <a href="register.html">
+        <h3>ainda não possui conta?</h3>
+      </a>
+      <p id="p">Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+      <button class="registerButton">Cadastrar</button>
+    </form>
+  </section>
+</body>
+
 </html>

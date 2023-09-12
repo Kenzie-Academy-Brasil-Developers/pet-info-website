@@ -1,0 +1,162 @@
+@media (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    body {
+       flex-direction: column !important;
+    }
+    .info__container{
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+       flex-direction: column !important;
+    }
+    .info__container{
+        width: 75% !important;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 320px){
+    .form__container {
+        margin-left: 2rem;
+        width: 100% !important;
+       
+    }
+    .info{
+        width: 100% !important;
+    }
+    .info__container{
+        margin: 0;
+    }
+    .info__container p{
+        width: 100% !important;
+    }
+    .info img {
+        width: 100% !important;
+    }
+}
+
+
+
+  
+
+
+body{
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 3rem;
+}
+
+.info{
+    /* border: 1px solid black; */
+    height: 60vh;
+    width: 391px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info img{
+    width: 70%;
+}
+
+.info__container{
+    gap: 1.5rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.form__container{
+    /* border: 1px solid green; */
+    border: 1px solid var(--grey-six);
+    border-radius: var(--radius-defalt);
+    width: 368px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 32px;
+    line-height: 2.5rem;
+}
+
+h3{
+    cursor: pointer;
+    text-align: center;
+}
+
+.feature{
+    color: var(--color-brand-one);
+}
+
+p{
+    color: var(--grey-tree);
+    font-size: 14px;
+    line-height: 1.3rem;
+    width: 75%;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1.5rem;
+    height: 80%;
+    justify-content: center;
+}
+
+#loginForm input{
+    height: 2.75rem;
+    border-radius: var(--radius-defalt);
+    background-color: var(--grey--eigth);
+    border: 1px solid var(--grey-six);
+}
+ 
+
+#loginForm button{
+    height: 2.375rem;
+}
+
+.form__container h2 {
+    margin-bottom: 2rem;
+    font-size: 20px;
+    margin-top: 3rem;
+}
+
+.acessButton{
+    cursor: pointer;
+    background-color: var(--color-brand-one);
+    color: var(--grey-nine);
+    border-style: none;
+    border-radius: var(--radius-defalt);
+}
+
+.registerButton{
+    
+    border:  1px solid var(--grey-six);
+    border-radius: var(--radius-defalt);
+}
+
+a{
+    text-decoration: none;
+    color: #212529;
+}
+
+
+

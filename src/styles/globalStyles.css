@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=MedievalSharp&display=swap');
+
+:root{
+--color-brand-one : #364FC7;
+--color-brand-tow :#3B56D9;
+
+--sucess:#087F5B;
+
+--alert-one: #C73650;
+--alert-two: #DB3C58;
+
+--grey-one: #212529;
+--grey-two:  #343A40;
+--grey-tree: #495057;
+--grey-four: #868E96;
+--grey-five: #ADB5BD;
+--grey-six: #E9ECEF;
+--grey-seven: #F1F3F5;
+--grey-eigth: #F8F9FA;
+--grey-nine: #FCFEFF;
+/* --blue: blue; */
+
+
+--radius-defalt: 4px;
+--radius-profile-img: 41.051px;
+
+--font-title-1: 32px;
+
+}
