@@ -313,15 +313,14 @@ function limitarPalavras(text) {
   return resultado;
 }
 
-// const safeChecking = () => {
-//   const tokenLocalStorage = localStorage.getItem('@petinfo:token');
+const safeChecking = () => {
+  const tokenLocalStorage = localStorage.getItem('@petinfo:token');
 
-//   if (tokenLocalStorage) {
-//     // alert("o usuário está logado")
-//   } else {
-//     window.location.replace("index.html");
-//   }
-// }
-
-// safeChecking();
+  if (tokenLocalStorage) {
+    // alert("o usuário está logado")
+  } else {
+    window.location.replace("/index.html");
+  }
+}
+safeChecking();
 
