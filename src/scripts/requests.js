@@ -18,7 +18,7 @@ export const loginRequest = async (request) => {
                 localStorage.setItem("@petinfo:token", JSON.stringify(resConvert.token))
                 alert("Login efetuado!")
 
-                window.location.replace("http://127.0.0.1:5500/feed.html");
+                window.location.replace("../../feed.html");
 
             } else {
 
